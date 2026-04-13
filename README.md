@@ -93,7 +93,7 @@ The user should not choose from a long list.
 They can start with a normal idea:
 
 ```text
-我想做一个ai日程管理工具
+I want to build an AI financial management tool.
 ```
 
 The system should start with `project-guide`.
