@@ -2,6 +2,8 @@
 
 This document describes the v0.1 local ProjectOS skill system.
 
+ProjectOS is a local project routing system, not a fixed linear pipeline. Its job is to decide the next useful layer from current project state, then return to `project-guide` after meaningful changes.
+
 ProjectOS is allowed to have many skills because the user should not have to choose them manually. The operating principle is:
 
 ```text
@@ -49,6 +51,8 @@ project-guide
 ```
 
 This is not a rigid pipeline. `project-guide` should re-route when the local project state changes.
+
+For multi-agent development, use this map as a shared local protocol: stabilize product and UI intent first, define system assumptions, assign scoped execution tasks, then refresh local notes before the next agent continues.
 
 ## Mermaid
 

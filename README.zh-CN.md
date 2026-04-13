@@ -4,7 +4,7 @@
 
 # ProjectOS Skills
 
-**一套给个人开发者本地使用的轻量 AI 项目工作流。**
+**一套给个人开发者和 AI coding agent 使用的本地项目路由系统。**
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
@@ -15,7 +15,7 @@
 ![Skills](https://img.shields.io/badge/skills-19-22c55e?style=for-the-badge)
 ![Local First](https://img.shields.io/badge/local-first-3b82f6?style=for-the-badge)
 
-**想法 -> PRD -> UI MVP -> 架构设计 -> 本地执行**
+**想法 -> PRD -> UI MVP -> 架构设计 -> 执行 -> 重新路由**
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/biblehs/projectos-skills/main/install.sh | bash
@@ -25,11 +25,13 @@ curl -fsSL https://raw.githubusercontent.com/biblehs/projectos-skills/main/insta
 
 ---
 
-ProjectOS Skills 不是让用户手动选择一堆 skill，而是用一个本地入口系统，把个人项目从想法带到可执行状态。
+ProjectOS Skills 不是线性流水线，也不是让用户手动选择一堆 skill。它是一套本地、非线性的项目路由系统，帮助个人开发者和 vibecoder 把项目从想法带到可执行状态。
+
+如果你使用多个 AI coding agents 并行开发，ProjectOS 也可以作为共享的本地项目协议：开发前统一 PRD、UI MVP、架构和任务边界，开发后把重要变化整理回本地项目笔记。
 
 ## v0.1 Public Preview
 
-ProjectOS Skills 是 AI 辅助项目开发的本地开源工作流层，帮助个人开发者让 AI coding agent 从产品思考进入有边界的开发执行，并形成更清晰的 PRD、UI MVP、架构和执行计划。
+ProjectOS Skills 是 AI 辅助项目开发的本地开源路由层，帮助开发者让一个或多个 AI coding agents 从产品思考进入有边界的开发执行，并形成更清晰的 PRD、UI MVP、架构和执行计划。
 
 v0.1 重点覆盖：
 
@@ -38,8 +40,9 @@ v0.1 重点覆盖：
 - 定义 AI、数据、auth、env 和 runtime 边界
 - 控制开发任务 scope 和验证方式
 - 让本地项目笔记随着项目推进保持清楚
+- 每次重要变化后重新判断下一步，而不是强制走固定流程
 
-v0.1 有意限制在开源工作流层。这个仓库只说明当前开源 skill 的行为，不展开更大的产品方向。
+v0.1 有意限制在开源路由层。这个仓库只说明当前开源 skill 的行为，不展开更大的产品方向。
 
 ## Skill 系统
 
@@ -106,6 +109,27 @@ project-guide
 
 这不是死流程。`project-guide` 应该根据真实项目状态重新路由。
 
+## 非线性和多 Agent 使用
+
+ProjectOS 不是瀑布式流程。默认链路只是新项目启动时的参考路径。
+
+真实使用时，它的循环是：
+
+```text
+project-guide
+-> 判断下一步主要引导层
+-> 进入产品、设计、系统或执行工作
+-> 重要变化后刷新本地项目笔记
+-> 回到 project-guide
+```
+
+对于多 agent 开发，可以把 ProjectOS 当成共享的本地项目协议：
+
+- 分配 agent 前，先明确产品真相和 UI MVP
+- 每个 agent 接 `execution-control` 拆出来的小任务
+- AI、数据、auth、env、runtime 假设放在 `system-foundation`
+- 重要修改后跑 `project-alignment`，避免后续 agent 使用过期上下文
+
 ## UI MVP Gate
 
 很多个人开发者不是卡在 PRD，而是卡在第一版界面。v0.1 把 UI MVP 变成进入开发前的关键闸门。
@@ -140,7 +164,7 @@ project-guide
 
 ## 开源范围
 
-ProjectOS Skills 是给个人开发者本地使用的 AI 项目工作流。
+ProjectOS Skills 是给个人开发者本地使用的 AI 项目路由系统。
 
 这个仓库聚焦：
 

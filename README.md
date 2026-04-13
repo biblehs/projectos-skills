@@ -4,7 +4,7 @@
 
 # ProjectOS Skills
 
-**A lightweight local project workflow for solo builders using AI coding agents.**
+**A local project routing system for solo builders and AI coding agents.**
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
@@ -15,7 +15,7 @@
 ![Skills](https://img.shields.io/badge/skills-19-22c55e?style=for-the-badge)
 ![Local First](https://img.shields.io/badge/local-first-3b82f6?style=for-the-badge)
 
-**Idea -> PRD -> UI MVP -> Architecture -> Local Execution**
+**Idea -> PRD -> UI MVP -> Architecture -> Execution -> Re-route**
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/biblehs/projectos-skills/main/install.sh | bash
@@ -25,7 +25,9 @@ curl -fsSL https://raw.githubusercontent.com/biblehs/projectos-skills/main/insta
 
 ---
 
-ProjectOS Skills helps a solo builder move from:
+ProjectOS Skills is a local, non-linear project routing system for AI-assisted development.
+
+It helps a solo builder or vibecoder move from:
 
 - idea
 - product foundation
@@ -33,11 +35,13 @@ ProjectOS Skills helps a solo builder move from:
 - architecture foundation
 - local execution planning
 
-without making the user manually choose a skill at every stage.
+without manually choosing a skill at every stage.
+
+It is also useful when working with multiple coding agents: ProjectOS gives each agent a shared local project protocol before work begins and a note-refresh loop after meaningful changes land.
 
 ## v0.1 Public Preview
 
-ProjectOS Skills is a local open-source workflow layer for AI-assisted project development. It helps a solo builder guide an AI coding agent from product thinking into scoped implementation with clearer PRD, UI MVP, architecture, and execution planning.
+ProjectOS Skills is a local open-source routing layer for AI-assisted project development. It helps a builder guide one or more AI coding agents from product thinking into scoped implementation with clearer PRD, UI MVP, architecture, and execution planning.
 
 v0.1 focuses on:
 
@@ -46,6 +50,7 @@ v0.1 focuses on:
 - defining AI, data, auth, env, and runtime boundaries
 - controlling implementation scope and validation
 - keeping local project notes clear as the project evolves
+- re-routing after each meaningful project change instead of forcing a fixed pipeline
 
 v0.1 is intentionally limited to the workflow layer. This repository documents the current open-source skill behavior and avoids defining work outside this repo.
 
@@ -112,6 +117,27 @@ project-guide
 
 This is guidance, not a rigid pipeline. `project-guide` should re-route based on actual project state.
 
+## Non-Linear And Multi-Agent Use
+
+ProjectOS is not a waterfall process. The default chain is only a starter path for a new project.
+
+In real work, the loop is:
+
+```text
+project-guide
+-> choose the next guided layer
+-> run focused product, design, system, or execution work
+-> refresh local notes after meaningful changes
+-> return to project-guide
+```
+
+For multi-agent development, use ProjectOS as a shared local protocol:
+
+- define product truth and UI MVP before assigning agents
+- give each agent a small scoped task from `execution-control`
+- keep AI, data, auth, env, and runtime assumptions in `system-foundation`
+- run `project-alignment` after important changes so later agents do not work from stale context
+
 ## UI MVP Gate
 
 Many builders get stuck between PRD and frontend. v0.1 makes UI MVP a first-class gate before implementation.
@@ -146,7 +172,7 @@ Every implementation task should leave the next local project step clear.
 
 ## Open Source Scope
 
-ProjectOS Skills is a local open-source workflow for solo builders using AI coding agents.
+ProjectOS Skills is a local open-source routing system for solo builders using AI coding agents.
 
 This repository focuses on:
 

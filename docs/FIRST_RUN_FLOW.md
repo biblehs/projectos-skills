@@ -2,6 +2,8 @@
 
 This file describes how the ProjectOS skill system should guide a real user from the first idea to the first implementation loop.
 
+ProjectOS is a non-linear local routing system. The starter chain helps new projects get moving, but real usage should always return to `project-guide` after meaningful changes.
+
 ## Principle
 
 The user should not need to understand the full 19-skill tree.
@@ -61,6 +63,18 @@ When the user moves from planning into real implementation, use this loop:
 5. `project-guide` recommends the next guided layer from the updated state.
 
 Do not treat code completion as the end of the loop. The next local project step should be clear.
+
+## Multi-Agent Development
+
+When a builder uses multiple coding agents, ProjectOS should provide shared local context rather than central agent control.
+
+Recommended pattern:
+
+1. Use `product-foundation` to stabilize PRD, UI MVP, and module boundaries before splitting work.
+2. Use `system-foundation` to define AI, data, auth, env, and runtime assumptions.
+3. Use `execution-control` to create small scoped tasks that can be assigned to separate agents.
+4. Use `project-alignment` after meaningful changes so later agents do not work from stale local notes.
+5. Return to `project-guide` to decide the next layer.
 
 ## Human-Friendly Version
 
