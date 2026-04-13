@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Guide"
+  short_description: "Route to the next best skill based on project state."
+  default_prompt: "Review the current project state and tell me which skill should be used next."

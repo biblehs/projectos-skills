@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sprint Manager"
+  short_description: "Build a tight weekly sprint plan."
+  default_prompt: "Review the current project state and produce an actionable sprint board."

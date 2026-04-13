@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Pipeline"
+  short_description: "Define AI stages and contracts clearly."
+  default_prompt: "Create or update the AI pipeline for this project."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "UI MVP"
+  short_description: "Turn product scope and visual references into a focused UI MVP."
+  default_prompt: "Create or update the UI MVP plan for this project."

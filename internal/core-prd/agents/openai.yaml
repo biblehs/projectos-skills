@@ -1,0 +1,4 @@
+interface:
+  display_name: "Core PRD"
+  short_description: "Define product core and version scope."
+  default_prompt: "Create or update the core PRD for this project."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Operating System"
+  short_description: "Set up the local ProjectOS workspace."
+  default_prompt: "Set up or refresh the local ProjectOS workspace for this project."

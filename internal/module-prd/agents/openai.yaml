@@ -1,0 +1,4 @@
+interface:
+  display_name: "Module PRD"
+  short_description: "Split the product into module PRDs."
+  default_prompt: "Create or update module PRDs for this project."

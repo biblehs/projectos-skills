@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design Sync"
+  short_description: "Sync PRD, Figma, and frontend state."
+  default_prompt: "Review the project design state and sync product, design, and implementation."

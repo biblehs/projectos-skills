@@ -1,0 +1,4 @@
+interface:
+  display_name: "Decision Log"
+  short_description: "Track major project decisions clearly."
+  default_prompt: "Summarize the important decisions in this project and update the decision log."

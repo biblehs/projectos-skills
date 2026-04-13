@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Foundation"
+  short_description: "Define product core, modules, UI MVP, and first-screen direction."
+  default_prompt: "Create or update the product foundation for this project."

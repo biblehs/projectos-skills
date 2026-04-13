@@ -1,0 +1,4 @@
+interface:
+  display_name: "Release Readiness"
+  short_description: "Check what is safe to ship now."
+  default_prompt: "Review the project and produce a release-readiness report."

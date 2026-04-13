@@ -1,0 +1,4 @@
+interface:
+  display_name: "Execution Control"
+  short_description: "Plan focused local execution and implementation scope."
+  default_prompt: "Create or update the execution control docs for this project."

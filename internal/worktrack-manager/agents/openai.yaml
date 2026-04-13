@@ -1,0 +1,4 @@
+interface:
+  display_name: "Work Track Manager"
+  short_description: "Keep parallel solo project tracks visible."
+  default_prompt: "Create or update the local work-track plan for this project."

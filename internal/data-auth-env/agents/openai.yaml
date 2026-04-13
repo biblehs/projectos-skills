@@ -1,0 +1,4 @@
+interface:
+  display_name: "Data Auth Env"
+  short_description: "Plan data, auth, and env foundations."
+  default_prompt: "Create or update the data, auth, and environment plan for this project."

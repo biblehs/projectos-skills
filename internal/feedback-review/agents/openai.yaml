@@ -1,0 +1,4 @@
+interface:
+  display_name: "Feedback Review"
+  short_description: "Turn feedback into local product decisions."
+  default_prompt: "Review recent user notes or product signals and update the local project direction."

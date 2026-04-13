@@ -1,0 +1,23 @@
+flowchart TD
+  PG["project-guide"] --> PF["product-foundation"]
+  PG --> SF["system-foundation"]
+  PG --> EC["execution-control"]
+  PG --> PA["project-alignment"]
+
+  PF --> CP["core-prd"]
+  PF --> MP["module-prd"]
+  PF --> UI["ui-mvp"]
+
+  SF --> AI["ai-pipeline"]
+  SF --> DAE["data-auth-env"]
+
+  EC --> PM["project-master"]
+  EC --> SM["sprint-manager"]
+  EC --> WT["worktrack-manager"]
+  EC --> POS["project-operating-system"]
+
+  PA --> DL["decision-log"]
+  PA --> CT["change-tracker"]
+  PA --> DS["design-sync"]
+  PA --> RR["release-readiness"]
+  PA --> FR["feedback-review"]

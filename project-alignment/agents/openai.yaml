@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Alignment"
+  short_description: "Refresh local decisions, project notes, and release notes."
+  default_prompt: "Review the current project and update the alignment docs."

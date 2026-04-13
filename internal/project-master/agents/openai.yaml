@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Master"
+  short_description: "Create a focused project control panel."
+  default_prompt: "Create or update the project master view for this codebase."

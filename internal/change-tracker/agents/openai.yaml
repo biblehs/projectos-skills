@@ -1,0 +1,4 @@
+interface:
+  display_name: "Change Tracker"
+  short_description: "Track project changes and refresh related notes."
+  default_prompt: "Review recent project changes and update the change tracker."

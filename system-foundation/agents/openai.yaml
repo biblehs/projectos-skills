@@ -1,0 +1,4 @@
+interface:
+  display_name: "System Foundation"
+  short_description: "Define AI, data, auth, env, and runtime boundaries."
+  default_prompt: "Create or update the system foundation for this project."
